@@ -1,0 +1,95 @@
+<h2 style="text-align: center;"><strong>Chapter 4</strong></h2>
+<h2 style="text-align: center;"><strong>Methodology</strong></h2>
+<p style="text-align: justify;"><strong>4.1&nbsp; </strong><strong>Introduction</strong></p>
+<p style="text-align: justify;">In this chapter discuss about programming language, method, required algorithm and design. First we have worked in college information system, where we have started android studio as connecting with firebase database. For controlling or data sending we have used Android app. Java programming language is used for application codding and XML ( Extensible Markup Language) is used for system design.</p>
+<p style="text-align: justify;">The location tracking is a technology that is used to track exact location of college bus. In this system has two part the first part is user application that show the bus location and another part is driver application that send the location into user via firebase database. This system is implemented by using Kalman filter algorithm.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.2 Methodology</strong></p>
+<p style="text-align: justify;">Methodology is the theoretical analysis of the methods applied to a system. It comprises the theoretical analysis of the body of methods and principles associated with a branch of knowledge. So In this chapter discus about theoretical method and algorithm using diagram.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.2.1 Block Diagram of the system:</strong></p>
+<p style="text-align: justify;">This system is used two application one is user application and another is driver application both are connected by database as show in figure 4.1. &nbsp;This application contains the three module such as college information module, bus tracking module and admin control module.</p>
+<p style="text-align: justify;">Fig 4.1: Block Diagram of the system</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.2.2 Flowchart of the system:</strong></p>
+<p style="text-align: justify;"><strong>&nbsp;</strong></p>
+<p style="text-align: justify;">Figure 4.2 Flowchart of user application</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">The user application&nbsp; have two&nbsp; basic fields Dynamic and Static. Internet connection needs to be used in dynamic fields but no need internet connection to be used static fields that show in (figure 4.2). This application has divided into three module college information, bus location and control panel. The college information such as teacher information, student information and employee information that is showed into different activity. The bus location show into Google map using map activity. The control panel is controlled by password authentication protocol. The selected admin will be able to update and control the system with the correct user ID and password.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.3 Algorithm analysis</strong></p>
+<p style="text-align: justify;"><strong>Kalman-Filter Prediction Algorithm: </strong>Kalman-Filter Prediction Algorithms is a linear recursive predictive update algorithm used to estimate the parameters of a process model. Starting with initial estimates, the Kalman filter allows the parameters of the model to be predicted and adjusted with each new measurement. Kalman filter algorithm works conceptually as follows, the historical passenger arrival rate is obtained from the data.</p>
+<p style="text-align: justify;">Fig. 3.2: Schematic of a Bus Route with Several Stops</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Assuming that bus n is currently at stop i</p>
+<p style="text-align: justify;">AT<sub>n(i+1)</sub>=DT<sub>n(i)</sub>+RT<sub>n(i,i+1)</sub></p>
+<p style="text-align: justify;"><sub>&nbsp;</sub></p>
+<p style="text-align: justify;">where: <em>AT<sub>n(i+1)</sub> </em>is the predicted arrival time of bus n at stop i+1 <em>RT<sub>n(i,i+1)</sub> </em>is the predicted running time between i and i+1 from Kalman Filter prediction algorithm <em>DT<sub>n(i)</sub> </em>is the actual departure time of bus n from stop I.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>Algorithm Step by Step: </strong>The algorithm uses the following steps to assign the vehicle on the correct link and to determine its position on that link.</p>
+<ul style="text-align: justify;">
+<li>Find the closest node from the first GPS point (i.e., initial point).</li>
+<li>Check whether the next point is an outlier. If not, then select all the road segments that pass through the closest node, otherwise take this point as the initial point and go to step-1.</li>
+<li>Using the weighting formula, choose the correct link. These two points (i.e., initial point and its next point) should be matched to this link.</li>
+<li>Determine the vehicle position on the correct link for each of the two points.</li>
+<li>Determine the vehicle position on the correct link for each of the two points.</li>
+<li>Check whether the next point is an outlier. If yes, then go to step-1 and take it as the initial point. If not, map this point on the same link and determine its position and continue this process until the above conditions are true, otherwise go to step-1.</li>
+<li>Repeat step-5 until all points has been matched.</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.4 Database Analysis</strong></p>
+<p style="text-align: justify;">A real-time database system is a classic database system which is providing real-time constraints and ensure reliability on system's timing requirements. Timing constraints are not required to be extremely short but the database need to manage explicit time constraints in a predictable way using time-cognizant methods. We are develop a Firebase real-time database</p>
+<p style="text-align: justify;"><strong>&nbsp;</strong></p>
+<p style="text-align: justify;"><strong>Real-time processing </strong></p>
+<p style="text-align: justify;">Real-time processing or computing is a system which is subject to &rdquo;real-time constraints&rdquo;. It means that this system is able to &rdquo;control an environment by receiving data, processing them, and returning the results sufficiently quickly to affect the environment at that time.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>&nbsp;Real-time database </strong></p>
+<p style="text-align: justify;">Intuitively, a real-time database may be seen as a classic database which is able to handle workloads whose states are permanently changing by using real-time processing.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">If we cross the definition of real-time processing and the intuition presented above, we may re-write a more formal definition of real-time database : A RealTime database is a database which follows a number of time constraints. Those are the temporal characteristics of the data stored in the database, the timing of the queries and the performance goals.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">The real-time database mostly differs from a traditional database by its performance goals, time constraints which are in microseconds or even in nanoseconds and by its ability to evaluate the average of the missed transactions and the cost incurred in these missed transactions.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Furthermore, like conventional databases, real-time databases have to respect ACID properties which are :</p>
+<ul style="text-align: justify;">
+<li>Atomicity : In the end, a transaction is never half-completed. It is completely done or not.</li>
+<li>Consistency : Transactions are run in a given specific order.</li>
+<li>Isolation : Transactions cannot see actions of another transaction while it is not yet commited.</li>
+<li>Durability : Once commited, a transaction cannot be modified.</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>Execution time :</strong></p>
+<p style="text-align: justify;">To compute the execution time of a transaction, we can use the following formula :</p>
+<p style="text-align: justify;">t<sub>exec </sub>= t<sub>db </sub>+ t<sub>I/O </sub>+ t<sub>int </sub>+ t<sub>appl </sub>+ t<sub>comm</sub></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">where :</p>
+<ul style="text-align: justify;">
+<li>t<sub>db </sub>is the processing of DB operations</li>
+<li>t<sub>I/O </sub>is the I/O processing</li>
+<li>t<sub>int </sub>is the transaction interference</li>
+<li>t<sub>appl</sub> is the non-DB application processing</li>
+<li>t<sub>comm </sub>is the communication time</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>Why real-time database ? </strong></p>
+<p style="text-align: justify;">Real-time database are adequate when we try to have a good picture of the current state of an environment. It uses time constraints that are not supported in conventional databases. Unlike the conventional database, a RTDBS uses deadlines to determine the accuracy of the measured value. Traditional databases have poor responsiveness and a lack of predictability which are main features of a RTDBS. Finally, a data never becomes obsolete in a traditional database which is not the case in a real-time database system (static data vs. real-time data).</p>
+<p style="text-align: justify;"><strong>4.6.4 Operating Environment </strong></p>
+<p style="text-align: justify;">The application will only be available for the Android operating systems. The application shall only be used with compatible android devices The user shall use this application on Android OS Jelly Bean 4.2.2(API 17) or any later versions of the Android OS.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.6.5 Design and Implementation Constraints </strong></p>
+<ul style="text-align: justify;">
+<li>Java programming language is used for the main application.</li>
+<li>Extensible Markup Language (XML) is used for the Android layout design.</li>
+<li>Firebase database is used for database.</li>
+<li>JavaScript Object Notation or JSON is used for Google map design.</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.9.5 Portability </strong></p>
+<p style="text-align: justify;">This software will be designed to run on any Android operating system version 4.2.2 or higher. The software will be forward compatible for all currently released Android operating system versions (up to 7.0).</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>4.10 Conclusion</strong></p>
+<p style="text-align: justify;">This chapter discusses the necessary specification of the software. Discuss what algorithm is required to create the application. This chapter also discuss operating environment and design and implementation Constraints. It will explain the importance and features of the application, the interfaces of the application, what the application will do, the constraints under which it must operate.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>

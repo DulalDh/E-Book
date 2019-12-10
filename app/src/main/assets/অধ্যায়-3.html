@@ -1,0 +1,60 @@
+<h2 style="text-align: center;"><strong>CHAPTER 3</strong></h2>
+<h2 style="text-align: center;"><strong>SYSTEM STUDY</strong></h2>
+<p style="text-align: justify;"><strong>3.1 Introduction</strong></p>
+<p style="text-align: justify;">In This chapter discusses about proposed systems and authentication. This feature of the application will give the user a secure and simple welcome screen. It will consist of two basic fields, Dynamic and Static. Internet connection needs to be used in dynamic fields but no need internet connection to be used static fields. Overall system will be controlled by the control panel. This application provide a GPS based system which helps to provide the location of the college buses.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>3.2 </strong><strong>Proposed system</strong></p>
+<p style="text-align: justify;">The proposed system provide complete information about college campus and college bus location. The college information, and college bus location can be easily accessed by one touch on the android application. This application is provided a GPS based system which helps to provide the location of the college bus. For location tracking is used extra one application called bus application. This bus application is installed in driver phone. The architecture of the proposed system has following figure.</p>
+<p style="text-align: justify;">Fig 3.1: Architecture of proposed system</p>
+<p style="text-align: justify;">This app is used web server technology of Location Based Services, which helps to track the current location of the bus and it estimates if any deviation occurs in the bus route using the Client-Server technology. Bus send its current location to the web server. This information is stored on the server database. The students who installed the college bus tracking application can track the bus routes, bus location and the arrival time of the bus using Kalman filter algorithm.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>3.2.1 This application contains the three module</strong></p>
+<ul style="text-align: justify;">
+<li>College information module</li>
+<li>Bus Tracking module</li>
+<li>Admin module</li>
+</ul>
+<p style="text-align: justify;"><strong>College information module:</strong></p>
+<p style="text-align: justify;">This module is facilitate keeping all the records of teachers and students, such as name, mailing address, phone number, department etc. It will be used to access college website without any browser. This application have gallery, notice board, admission information, campus history and control panel. So all the information about college will be available in a few seconds.</p>
+<p style="text-align: justify;">Fig 3.2: Class diagram of&nbsp; College information module</p>
+<p style="text-align: justify;"><strong>Bus tracking module:</strong></p>
+<p style="text-align: justify;">The Bus application should have installed in driver phone. Using the Latitude and longitude the current location of the bus can be found out and the current location is updated to the server. Corresponding to the bus movement the change in latitude and longitude are updated in the database for every minute. Updated latitude and longitude value in the database is used to find the exact location of the bus using Google map.</p>
+<p style="text-align: justify;">Fig 3.3: Bus tracking module</p>
+<p style="text-align: justify;"><strong>Admin module:</strong></p>
+<p style="text-align: justify;">To access admin module must be entered user id and password. This module is used to control overall system such as update and delete information and maintain location tracking system. This module is used to&nbsp; update college notice board, gallery and college information by the database</p>
+<p style="text-align: justify;"><strong>&nbsp;</strong></p>
+<p style="text-align: justify;">Fig 3.4: Admin control module</p>
+<p style="text-align: justify;"><strong>3.2</strong><strong> Authentication </strong></p>
+<p style="text-align: justify;">Authentication is the process of recognizing a user&rsquo;s identity. It is the mechanism of associating an incoming request with a set of identifying credentials. The credentials provided are compared to those on a file in a database of the authorized user&rsquo;s information on a local operating system or within an authentication server.</p>
+<p style="text-align: justify;">Fig 3.2: Flowchart of authentication</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>How authentication works</strong></p>
+<p style="text-align: justify;">During authentication, credentials provided by the user are compared to those on file in a database of authorized users' information either on the local operating system or through an authentication server. If the credentials match, and the authenticated entity is authorized to use the resource, the process is completed and the user is granted access. The permissions and folders returned define both the environment the user sees and the way he can interact with it, including hours of access and other rights such as the amount of resource storage space.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>3.2.2 Application Startup procedure </strong></p>
+<p style="text-align: justify;">This feature will give the user a secure and simple welcome screen. The login is enabled for the administrator use only and is not accessible to any other than the college administrator. It has only limited and handful of input capability of limited number of administrator in the college. Any student cannot enter the routine settings and hamper the system.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>3.2.3 Response Sequences </strong></p>
+<p style="text-align: justify;">It will consist of two basic fields, Dynamic and Static. Internet connection needs to be used in dynamic fields but no need internet connection to be used static fields. In this application, every user able to know bus location tracking using internet. Overall system will be controlled by the control panel. The control panel will be controlled by an admin that will be placed in a button ache on the app. we are develop a Firebase real-time database.&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>Execution time:</strong></p>
+<p style="text-align: justify;">To compute the execution time of a transaction, we can use the following formula :</p>
+<p style="text-align: justify;">t<sub>exec </sub>= t<sub>db </sub>+ t<sub>I/O </sub>+ t<sub>int </sub>+ t<sub>appl </sub>+ t<sub>comm</sub></p>
+<p style="text-align: justify;"><sub>&nbsp;</sub></p>
+<p style="text-align: justify;">Where:</p>
+<ul style="text-align: justify;">
+<li>t<sub>db </sub>is the processing of DB operations</li>
+<li>t<sub>I/O </sub>is the I/O processing</li>
+<li>t<sub>int </sub>is the transaction interference</li>
+<li>t<sub>appl</sub> is the non-DB application processing</li>
+<li>t<sub>comm </sub>is the communication time</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>3.2.4 Functional Requirements </strong></p>
+<p style="text-align: justify;">The most important function of the control panel is to provide access to registered Admin only and college information update, notice board update. The function of the location tracking is to take the correct position of the college bus and display it on Google Maps. It is also useful&nbsp;&nbsp; for the parents&nbsp; to communicate with the college&nbsp; .Students can interact with faculties directly.&nbsp; Latest news and updates&nbsp; about college is got through notifications. Our multipurpose program is considering the user as either an sastian or non-sastian, student or parent, faculties or office staffs individually. project gives a total solution to everyone. The application becomes also a Mobile version of our official website.&nbsp;&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p style="text-align: justify;"><strong>3.5 Conclusion</strong></p>
+<p style="text-align: justify;">This feature of the application will give the user a secure and simple welcome screen. It will consist of two basic fields, Dynamic and Static. Internet connection needs to be used in dynamic fields but no need internet connection to be used static fields. Overall system will be controlled by the control panel. This application provide a GPS based system which helps to provide the location of the college buses.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
